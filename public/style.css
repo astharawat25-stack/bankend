@@ -1,0 +1,179 @@
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #292342;
+  background: linear-gradient(135deg, #f5f0ff, #edf5ff);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background: white;
+  border-bottom: 1px solid #e8e0fa;
+}
+
+header h2 {
+  color: #7046e8;
+}
+
+header span {
+  color: #68617c;
+  font-size: 14px;
+}
+
+main {
+  width: 90%;
+  max-width: 650px;
+  margin: 55px auto 0;
+  text-align: center;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  margin: auto auto 20px;
+  width: 65px;
+  height: 65px;
+  color: white;
+  font-size: 32px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #a58aff, #653ce4);
+  box-shadow: 0 8px 25px #8662ed55;
+}
+
+.tag {
+  color: #7954e8;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: clamp(34px, 6vw, 49px);
+  line-height: 1.2;
+}
+
+h1 span {
+  color: #7954e8;
+}
+
+.description {
+  color: #777187;
+  margin: 18px 0 32px;
+  line-height: 1.7;
+}
+
+form {
+  padding: 20px;
+  text-align: left;
+  background: white;
+  border: 1px solid #e6dff5;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px #4b318b12;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 110px;
+  padding: 13px;
+  font: inherit;
+  line-height: 1.5;
+  border: 1px solid #ddd5f0;
+  border-radius: 12px;
+  resize: vertical;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #7954e8;
+  box-shadow: 0 0 0 3px #7954e81a;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 11px;
+  color: white;
+  background: linear-gradient(100deg, #8b67f4, #633ee0);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+#answerCard {
+  margin-top: 25px;
+  padding: 22px;
+  text-align: left;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e6dff5;
+}
+
+#answerCard h3 {
+  margin-bottom: 15px;
+  color: #7046e8;
+}
+
+#answer {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.8;
+  color: #514b65;
+}
+
+#errorMessage {
+  margin-top: 15px;
+  color: #c62828;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 55px;
+  padding: 20px;
+  text-align: center;
+  color: #817990;
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  main {
+    margin-top: 40px;
+  }
+
+  form {
+    padding: 15px;
+  }
+} 

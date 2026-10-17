@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask Gemini AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h2>✦ Gemini AI</h2>
+    <span>AI Assistant</span>
+  </header>
+
+  <main>
+    <div class="icon">✦</div>
+    <p class="tag">YOUR PERSONAL AI ASSISTANT</p>
+
+    <h1>Ask anything.<br><span>Discover more.</span></h1>
+
+    <p class="description">
+      Ask a question and let Gemini help you learn something new.
+    </p>
+
+    <form id="questionForm">
+      <label for="question">Your question</label>
+
+      <textarea
+        id="question"
+        placeholder="Example: What is JavaScript?"
+        maxlength="2000"
+        required
+      ></textarea>
+
+      <button id="askButton" type="submit">Ask Gemini →</button>
+    </form>
+
+    <section id="answerCard" hidden>
+      <h3>✦ Gemini's Answer</h3>
+      <p id="answer"></p>
+    </section>
+
+    <p id="errorMessage" role="alert"></p>
+  </main>
+
+  <footer>Made with ♥ using Gemini AI</footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
+
+
